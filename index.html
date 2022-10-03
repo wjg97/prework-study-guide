@@ -12,6 +12,7 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
 c
     <main>
@@ -61,19 +62,66 @@ c
         <ul>
           <li>git status: checks what branch we are currently on</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>git status: show modified files in working directory, staqged for next commit</li>
+          <li>git add [file]: add a file as it looks now to your next commit (stage)</li>
+          <li>git reset [file]: unstage a file while retaining the changes in working directory</li>
+          <li>git diff: diff of what is changed but not staged</li>
+          <li>git diff --staged: diff of what is staged but not yet committed</li>
+          <li>git commit -m “[descriptive message]”: commit your staged content as a new commit snapshot</li>
+          <li>git branch: list your branches. a * will appear next to the currently active branch</li>
+          <li>git branch [branch-name]: create a new branch at the current commit</li>
+          <li>git checkout: switch to another branch and check it out into your working directory</li>
+          <li>git merge [branch]: merge the specified branchs history into the current one</li>
+          <li>git log: show all commits in the current branchs history</li>
+          <li>PR: pull request</li>
+          <li>git pull origin main: will pull changes from the locally stored branch origin and merge that to the local checked-out branch</li>
+          <li></li>
         </ul>
       </section>
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>JavaScript (JS) is a high-level dynamic programming language that allows users to interact with websites.</li>
+          <li>Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles</li>
+          <li>JavaScript is also a weakly typed language, which means it allows implicit type conversion when an operation involves mismatched types, instead of throwing type errors.</li>
+          <li>Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types</li>
+          <li>'var': is variable</li>
+          <li>a variable is simply a named container that allows us to store data in our code.</li>
+          <li>In JavaScript, to declare a variable, we use the var keyword</li>
+          <li>we use an assignment operator = to assign the specific data that we want stored in our variable</li>
+          <li>All strings are surrounded by quotation marks</li>
+          <li>Note that each line of JavaScript code ends with a semicolon.</li>
+          <li>We can use the console.log method to output a message to the web console by adding an argument</li>
+          <li>Control flow is the order in which a computer executes code in a script.</li>
+          <li>In JavaScript, code runs from the first statement at the top of the page, down to the last statement at the bottom of the page</li>
+          <li>if statments will check whether a condition evaluates to be true or false, answer determins next course of action in a application</li>
+          <li>we must be intentional about how we set up code in a JS file</li>
+          <li>An array is a single variable that is used to hold a group of data.</li>
+          <li>A 'for' loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over</li>
+          <li>must use another statement like 'if' to interumpt the control flow</li>
+          <li>Functions are reusable blocks of code that contain instructions to perform a specific task.</li>
         </ul>
       </section>
+
+      <section class="card" id="adding file to the repo">
+        <h2>Adding a File to Repo using Terminal</h2>
+        <ul>
+          <li>In the command line, navigate to the prework-study-guide directory.</li>
+          <li>Check what branch you are currently on by running git status</li>
+          <li>If you are not on the main branch, run git checkout main to switch to the main branch.</li>
+          <li>Pull the remote main branch into the local main branch by running git pull origin main. Now your local and remote main branches are in sync!</li>
+          <li>Create a new feature branch for the JavaScript file by entering git checkout -b feature/add-js into the command line.</li>
+          <li>Navigate to the assets/ folder in the project repo by entering cd assets in the command line. This is the same folder where we added the style.css file in the previous lesson.</li>
+          <li>Create a new file inside the assets folder called script.js by entering touch script.js in the command line.</li>
+          <li>In VS Code, open the prework-study-guide directory, and then open the script.js file</li>
+        </ul>
+      </section>  
     </main>
 
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
